@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { useSettingsContext } from '@/lib/settings-context'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'

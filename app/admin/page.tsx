@@ -15,7 +15,15 @@ export default function AdminDashboard() {
     totalCategories: 0,
     totalRevenue: 0,
   })
-  const [recentOrders, setRecentOrders] = useState([])
+  interface Order {
+    id: number
+    fullName: string
+    totalAmount: number
+    orderStatus: string
+    createdAt: string
+  }
+
+  const [recentOrders, setRecentOrders] = useState<Order[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
